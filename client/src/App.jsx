@@ -6,6 +6,7 @@ import {Setmeet} from "./Components/Setmeet";
 import { Navbar } from './Components/Navbar';
 import { UpdateMeetDeatils } from './Components/UpdateMeetDeatils';
 import { Footer } from './Components/Footer';
+import { UpcomingMeet } from './Components/UpcomingMeet';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
               <Route exact path="/meetlist" element={<MeetList/>} />
               <Route exact path="/setmeet" element={<Setmeet/>} />
               <Route exact path="/updatemeetdetails" element={<UpdateMeetDeatils/>} />
+              <Route exact path="/upcomingmeet" element={<UpcomingMeet/>} />
             </Routes>
         </Router>
         <Footer/>
