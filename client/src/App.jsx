@@ -1,14 +1,13 @@
-import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {Home} from "Components/Home";
-import {MeetList} from "Components/MeetList";
-import {Setmeet} from "Components/Setmeet";
+import {Home} from "./Components/Home";
+import {MeetList} from "./Components/MeetList";
+import {Setmeet} from "./Components/Setmeet";
 
 
 function App() {
   return (
     <div className='main-body'>
-        <NoteState>
+      <h1>Navbar</h1>
         <Router>
             <Routes>
               <Route exact path="/" element={<Home />} />
@@ -16,7 +15,6 @@ function App() {
               <Route exact path="/setmeet" element={<Setmeet/>} />
             </Routes>
         </Router>
-      </NoteState>
     </div>
   )
 }

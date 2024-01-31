@@ -1,9 +1,7 @@
 import React from 'react'
 
-const MeetList = () => {
+export const MeetList = () => {
   return (
-    <div>Past</div>
+    <div>Inside meetlist</div>
   )
 }
-
-export default MeetList;
