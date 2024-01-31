@@ -5,6 +5,7 @@ import {MeetList} from "./Components/MeetList";
 import {Setmeet} from "./Components/Setmeet";
 import { Navbar } from './Components/Navbar';
 import { UpdateMeetDeatils } from './Components/UpdateMeetDeatils';
+import { Footer } from './Components/Footer';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Route exact path="/updatemeetdetails" element={<UpdateMeetDeatils/>} />
             </Routes>
         </Router>
+        <Footer/>
       </div>
     </div>
   )
