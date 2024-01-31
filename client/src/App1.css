@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800;900&family=Inter:wght@200;300;400&family=Outfit:wght@300;400;600&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* font-family: 'Figtree', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+
+*{
+    font-family: 'Inter';
+}
+
+
+body{
+    background-image: url('D:/Sarrvesh2024Coding/RoomChatApp/frontend/images/bg-intro-desktop.png');
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(6 182 212 / 1)
+    /* background-color: red; */
+}
+
+
+
+.home-div{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.content-left{
+    /* height: 100vh; */
+    margin: 2rem;
+    padding: 3rem;
+    color: white;
+    width: 35%;
+    /* border: 1px solid black; */
+}
+
+.content-header{
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-weight: 700; /* Use font weight 700 */
+    font-size: 52px;
+  
+}
+
+.content-para{
+    font-family: 'Poppins', sans-serif; /* Use Poppins font */
+    font-weight: 400; /* Use font weight 700 */
+    font-size: 16px;
+}
+
+.form-right{
+    /* border: 1px solid black; */
+    border-radius: 16px;
+    max-width: 30%;
+    background-color: white;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+    width: 30%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    /* border: 2px solid black; */
+    
+}
+
+.inp{
+    height: 3rem;
+    padding-left: 2rem;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+
+.inp:focus{
+    border: 1px solid hsl(248, 32%, 49%);
+    outline: none;
+    caret-color: hsl(248, 32%, 49%);
+    /* caret-width: 10px; */
+}
+
+.input-btn{
+    height: 3.5rem;
+    background-color:hsl(154, 59%, 51%);
+    font-family: 'Poppins', sans-serif;
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    /* font-weight: bold; */
+    /* color: white; */
+
+}
+
+.tands{
+    text-align: center;
+    /* border: 1px solid black; */
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    display: inline;
+    /* font-weight: bold; */
+}
+
+.highlight{
+    display: inline;
+    color: cyan;
+    /* font-weight: bold; */
+}
+
+
+
