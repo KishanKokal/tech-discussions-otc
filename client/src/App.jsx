@@ -3,12 +3,13 @@ import './App.css';
 import {Home} from "./Components/Home";
 import {MeetList} from "./Components/MeetList";
 import {Setmeet} from "./Components/Setmeet";
+import { Navbar } from './Components/Navbar';
 
 
 function App() {
   return (
     <div className='main-body'>
-      <h1>Navbar</h1>
+      <Navbar/>
         <Router>
             <Routes>
               <Route exact path="/" element={<Home />} />
