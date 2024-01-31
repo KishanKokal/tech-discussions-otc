@@ -7,6 +7,7 @@ import { Navbar } from './Components/Navbar';
 import { UpdateMeetDeatils } from './Components/UpdateMeetDeatils';
 import { Footer } from './Components/Footer';
 import { UpcomingMeet } from './Components/UpcomingMeet';
+import "./ScrollBar.css"
 
 
 function App() {
