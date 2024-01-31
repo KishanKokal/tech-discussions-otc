@@ -50,6 +50,26 @@ app.post('/upcomingEvents', async (req, res) => {
 });
 
 
+//controller for handling GET request for upcoming events
+app.get('/upcomingEvents/get', async (req, res) => {
+  try {
+    //events that are after the current time.
+    // Get the current time
+    const currentTime = new Date();
+
+
+    const upcomingEvents = await upcomingEventsModel.find({
+      meetDate: { $gt: currentTime },
+    });
+
+    res.status(200).json(upcomingEvents);
+  } catch (error) {
+    console.error('Error getting upcoming events:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
+});
+
+
 export const start = () => {
   app.listen(3000, () => {
     console.log("Server is ruqgqerge1rgnning on port 3000");
