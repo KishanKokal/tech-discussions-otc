@@ -4,6 +4,7 @@ import {Home} from "./Components/Home";
 import {MeetList} from "./Components/MeetList";
 import {Setmeet} from "./Components/Setmeet";
 import { Navbar } from './Components/Navbar';
+import { Footer } from './Components/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
               <Route exact path="/setmeet" element={<Setmeet/>} />
             </Routes>
         </Router>
+        <Footer/>
       </div>
     </div>
   )
