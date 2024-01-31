@@ -1,17 +1,3 @@
-* {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
-}
-
-.main-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #242424;
-  color: white;
-  width: 100vw;
-  height: 100vh;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
