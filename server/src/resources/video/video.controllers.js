@@ -1,5 +1,6 @@
 import { convertSpeechToText } from "../utils/video.js";
-import { summarizeTranscript } from "../utils/summarize.js";
+import { summarizeTranscript, saveSummaryFile } from "../utils/summarize.js";
+
 /**
  *
  * @param {*} req
@@ -12,5 +13,6 @@ export const uploadVideo = async (req, res) => {
   let text = response.text;
   console.log("speech converted to text, next calling summarizeTranscript");
   let summary = await summarizeTranscript(text);
-  console.log(summary);
+  console.log("summary generated, next calling saveSummaryFile");
+  await saveSummaryFile(summary.content, req.file.filename);
 };

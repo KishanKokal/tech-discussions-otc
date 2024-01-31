@@ -1,4 +1,4 @@
-export const SYSTEM_MESSAGE = `Given a transcript of a video meeting, generate a summary of the query in the following format, skip the links to the speakers twitter, only add their names:
+export const SYSTEM_MESSAGE = `Given a transcript of a video meeting, generate a summary (STRICTLY ONLY THE TEXT THAT CAN BE COPIED IN A .ADOC FILE, I mean follow the syntax of the .adoc file like headings and pointers ) of the query in the following format, skip the links to the speakers twitter, only add their names:
 ==== Topics Discussed
 
 * We had discussions about how good link:https://meetup.ourtech.community/4[OTC Meetup #4] turned out to be.
