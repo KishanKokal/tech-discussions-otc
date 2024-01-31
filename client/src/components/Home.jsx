@@ -18,6 +18,7 @@ export const Home = () => {
                 <div className="flex-1 p-4">
                     <div className="text-white h-screen flex items-center justify-center flex-col p-20  max-md:h-1/2 max-md:p-0">
                             <h1 className="text-4xl font-bold mb-4 max-md:text-3xl">
+
                             <ReactTyped
                                     strings={["Our Tech Community"]}
                                     typeSpeed={50}

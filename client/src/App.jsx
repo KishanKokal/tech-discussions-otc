@@ -4,18 +4,20 @@ import {Home} from "./Components/Home";
 import {MeetList} from "./Components/MeetList";
 import {Setmeet} from "./Components/Setmeet";
 import { Navbar } from './Components/Navbar';
+import { UpdateMeetDeatils } from './Components/UpdateMeetDeatils';
 
 
 function App() {
   return (
     <div className='main-body'>
-      <Navbar/>
       <div>
         <Router>
+            <Navbar/>
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route exact path="/meetlist" element={<MeetList/>} />
               <Route exact path="/setmeet" element={<Setmeet/>} />
+              <Route exact path="/updatemeetdetails" element={<UpdateMeetDeatils/>} />
             </Routes>
         </Router>
       </div>
