@@ -10,6 +10,7 @@ function App() {
   return (
     <div className='main-body'>
       <Navbar/>
+      <div>
         <Router>
             <Routes>
               <Route exact path="/" element={<Home />} />
@@ -17,6 +18,7 @@ function App() {
               <Route exact path="/setmeet" element={<Setmeet/>} />
             </Routes>
         </Router>
+      </div>
     </div>
   )
 }
