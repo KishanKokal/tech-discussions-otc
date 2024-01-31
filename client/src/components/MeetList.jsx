@@ -23,7 +23,7 @@ export const MeetList = () => {
     },
   ];
   return (
-    <div className="meet-list bg-cyan-500 h-screen">
+    <div className="meet-list bg-cyan-500 h-screen pt-16">
       <h2 className="text-4xl font-bold text-white w-1/2 mx-auto text-center p-6">Meet List</h2>
       <div className="flex justify-around">
         <Cards data={ApiData[0]} />
